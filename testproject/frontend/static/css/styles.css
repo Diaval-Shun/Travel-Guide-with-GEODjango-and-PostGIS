@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+#map {
+  height: 100vh;
+  width: 55vw
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 55vw 45vw;
+  grid-template-rows: 100vh;
+  overflow: hidden !important;
+}
+
+/* Columns */
+.grid-1 {
+  height: 100%;
+  width: 100%;
+}
+
+.grid-2 {
+  height: 100%;
+  width: 100%;
+}
+
+.column-menu {
+  height: 100%;
+  width: 100%;
+  padding: 1px;
+  background-color: #eae2e2
+}
+
+#menu_title {
+  margin: 0;
+  padding: 20px;
+  margin-bottom: -45px;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  font-size: 28px;
+}
+
+#placeimage {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+#menu_text {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 20%;
+  text-align: left;
+  font-size: 22px;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.somot {
+  background-color: yellow;
+}
+
+.sohat {
+  background-color: green;
+}
+
+.soba {
+  background-color: blue;
+}

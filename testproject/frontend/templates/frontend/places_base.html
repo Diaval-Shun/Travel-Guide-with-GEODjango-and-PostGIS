@@ -1,0 +1,42 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block css_links %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+{% endblock %}
+
+{% block js_links %}
+<script type="text/javascript" src="{% static 'libs/leaflet/leaflet.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/main.js' %}?time=2"></script>
+{% endblock %}
+
+{% block content %}
+<div class="grid-container">
+    <div class="grid-1">
+        <div id="map"></div>
+    </div>
+
+    <div class="grid-2">
+        <div class="column-menu" id="menu-information">
+            <p id="menu_title">Chào mừng bạn đến với Bản đồ các địa điểm <br /> du lịch Việt Nam</p>
+            <div class="circle-container">
+                <div class="circle somot"></div>
+                <div><b>Du lịch văn hóa</b></div>
+            </div>
+            <div class="circle-container">
+                <div class="circle sohat"></div>
+                <div><b>Du lịch sinh thái</b></div>
+            </div>
+            <div class="circle-container">
+                <div class="circle soba"></div>
+                <div><b>Du lịch nghỉ dưỡng</b></div>
+            </div>
+            <img id='placeimage' src="./media/place_images/Australia.jpg" alt="Australia image">
+            <p id="menu_text"></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
